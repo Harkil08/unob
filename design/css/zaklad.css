@@ -1,0 +1,160 @@
+html, body {
+    width: 100%;
+    height: 100%; 
+}
+  
+body {
+      margin: 0;
+      padding: 0; 
+      font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.bg {
+    background-image: url(/design/img/bg.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: scale(1.1);
+}
+
+.menu {
+    width: 80%;
+    padding: 0 10% 0 10%;
+    height: 60px;
+    background-color: rgb(17, 55, 4);
+    color: #DDDDDD;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+    top: 0; 
+    position: relative;
+}
+
+.menu img {
+    height: 50px;
+    padding-right: 5px;
+    margin-top: -15px;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    position: absolute;
+    margin-block-end: 19px;
+    margin-block-start: 19px;
+    padding-inline-start: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 8px;
+    border: 1px solid #DDDDDD;
+    margin: -8px 4px 8px 4px;
+    //font-size: 14px;
+    color: white; 
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.menu li:hover, .active {
+    color: black;
+    background-color: #DDDDDD;
+}
+
+.menu .right {
+    float: right;
+    font-size: 24px;
+    padding-top: 16px;
+}
+
+.menu .right i {
+    padding-left: 10px;
+}
+
+.menu .right a {
+    cursor: pointer;
+}
+
+.menu-info {
+    background-color: #DDDDDD;
+    width: 100%;
+    height: 24px;
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+    font-size: 14px;
+}
+
+.menu-info-text {
+    width: 80%;
+    margin: auto;
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.menu-info-text2 {
+    float: right;
+}
+
+.sekce {
+    width: 80%;
+    margin: auto;
+    background-color: #DDDDDD;
+    color: black;
+    height: 580px;
+    position: relative;
+    margin-top: 60px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 10px rgb(0 0 0 / 35%);
+}
+
+.sekce .sekce-header {
+    padding: 16px;
+    font-size: 24px;
+    background-color: rgb(17, 55, 4);
+    color: #DDDDDD;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+}
+
+.sekce .button {
+    margin: auto;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 10px rgb(0 0 0 / 35%);
+    width: 20%;
+    background-color: rgb(17, 55, 4);
+    color: #DDDDDD;
+    text-align: center;
+    padding: 12px;
+    margin-top: 14px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 8px 0px 8px 0px;
+    color: #DDDDDD;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(17, 55, 4);
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 1px 10px rgb(0 0 0 / 35%);
+}
