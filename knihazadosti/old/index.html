@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pruba</title>
+    
+	<style type="text/css">
+	.bila {background-color: white; font-weight:normal;}
+	.zluta {background-color: yellow;}
+	.modra {background-color:Aqua;}
+	.zlutatucne {background-color: yellow; font-weight:bold;}
+	</style>
+
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif; font-size:small; background-color: White;">
+    
+    <h1 style="font-size:large; color: blue;">Zkouška</h1>
+
+    <p>
+      <span id="cas" style="background-color: #ffffc0; font-family: Courier New; font-weight:bold;"></span>
+    </p>
+
+    <p>
+      Toto je zkušební stránečka, kterou používám k <span style="font-style: italic;">testování funkčnosti.</span> Stránka by měla být dobře čitelná i na telefonu.
+    </p>
+    
+    <h2 style="font-size: medium; color: navy;">
+      Nejprve zkouška kódování:
+    </h2>
+
+    <p>
+      Zkouška kódování různých znaků s diakritickými znaménky a správnost jejich zobrazení v prohlížeči: 
+      <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'">ěščřžýáíéúůóťďĺľňťüö ÁČÉĚŠÓĎŇŘŤŽÍĹĽÚŮÜÖ</span>
+      <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'" style="font-style: italic;">ěščřžýáíéúůóťďĺľňťüö ÁČÉĚŠÓĎŇŘŤŽÍĹĽÚŮÜÖ</span>
+      <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'" style="font-weight: bold;">ěščřžýáíéúůóťďĺľňťüö ÁČÉĚŠÓĎŇŘŤŽÍĹĽÚŮÜÖ</span>
+    </p>
+
+    <p>
+      Tato stránka je zapsána v kódu <span style="color: Maroon; font-weight: bold; border-style: solid; border-width: 1px; border-color: red;">&nbsp; utf-8 &nbsp;</span>
+    </p>
+  
+    <p>
+      <span class="bila" onmouseover="this.className='zluta'" onmouseout="this.className='bila'">Příliš žluťoučký kůň úpěl ďábelské ódy.</span>
+      <span class="bila" onmouseover="this.className='zluta'" onmouseout="this.className='bila'" style="font-style: italic;">Příliš žluťoučký kůň úpěl ďábelské ódy.</span>
+      <span class="bila" onmouseover="this.className='zluta'" onmouseout="this.className='bila'" style="font-weight: bold;">Příliš žluťoučký kůň úpěl ďábelské ódy.</span>
+    </p>
+
+    <h2 style="font-size: medium; color: navy;">
+      A nyní něco málo textu:
+    </h2>
+
+    <p style="font-size: small;">
+      Písmo velikosti <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'" style="color: Maroon; font-weight: bold;">&nbsp;small&nbsp;</span>
+    </p>
+
+    <p style="font-size: medium;">
+      Písmo velikosti <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'" style="color: Maroon; font-weight: bold;">&nbsp;medium&nbsp;</span>
+    </p>
+
+    <p style="font-size: large;">
+      Písmo velikosti <span class="bila" onmouseover="this.className='zlutatucne'" onmouseout="this.className='bila'" style="color: Maroon; font-weight: bold;">&nbsp;large&nbsp;</span>
+    </p>
+
+    <table style="border-width: 1px; border-style:solid; border-color: Green;"><tr>
+      <td valign="top" class="bila" onmouseover="this.className='modra'" onmouseout="this.className='bila'">Některé zjištěné parametry:</td>
+      <td valign="top" class="bila" onmouseover="this.className='zluta'" onmouseout="this.className='bila'">
+      <script type="text/javascript" language="JavaScript">
+      <!--
+          function naplnCas() 
+          {
+              var datum = new Date(); // prave aktualni cas
+              var hodin = datum.getHours().toString();
+              var minut = datum.getMinutes().toString();
+              var sekund = datum.getSeconds().toString();
+              if (hodin.length == 1)
+                  hodin = "0" + hodin;
+              if (minut.length == 1)
+                  minut = "0" + minut;
+              if (sekund.length == 1)
+                  sekund = "0" + sekund;
+              aktualniCas = " &nbsp; " + hodin + ":" + minut + ":" + sekund + "  &nbsp; ";
+              window.document.getElementById("cas").innerHTML = aktualniCas;
+              // vypocitana hodnota se vklada jako html dovnitr elemnetu, ktery ma id "cas"
+          }
+
+          naplnCas(); //naplneni na zacatku
+          window.setInterval("naplnCas()", 1000); //pravidelna zmena, 1000 je sekunda
+
+          var browser = navigator.appName
+          var verze = parseInt(navigator.appVersion)
+          sirka = screen.width
+          vyska = screen.height
+          asirka = screen.availWidth
+          avyska = screen.availHeight
+          color = screen.colorDepth
+          //zobrazení údajů
+          document.write("Prohlížeč: " + navigator.userAgent + "<br />")
+          document.write("Rozlišení obrazovky: " + sirka + " × " + vyska + "<br />")
+          document.write("Pracovní plocha: " + asirka + " × " + avyska + "<br />")
+          document.write("Nastavení barev: " + color + " bit/pixel" + "<br />")
+          document.write("Povolené cookie: " + navigator.cookieEnabled + "<br />")
+          document.write("Nastavený jazyk: " + navigator.language + "<br />")
+          document.write("Platforma prohlížeče: " + navigator.platform + "<br />")
+      // -->
+      </script>
+      </td></tr>
+    </table>
+    <h1 style="font-size:large; color: blue;">Závěr</h1>
+    <p>
+      To by k otestování funčnosti (nevím čeho) mohlo stačit. 
+      <span style="border-style: dashed; border-width: 0px 0px 2px 0px; border-color: green;">&nbsp; Konec &nbsp;</span>
+    </p>
+
+
+
+
+  </body>
+</html>

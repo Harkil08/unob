@@ -1,0 +1,105 @@
+.nahoru {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 88;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.nahoru.active {
+    opacity: unset;
+    visibility: unset;
+}
+
+.nahoru .box {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.nahoru .box i {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid #999;
+    border-top:3px solid black;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+.spinner2{
+    width: 50px;
+    height: 50px;
+    display: none;
+
+    border: 2px solid #999;
+    border-top:3px solid black;
+    border-radius: 100%;
+    
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: 18px auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height:100%;
+    width:100%;
+    background-color:rgba(255, 255, 255, 1);
+    position:fixed;
+    z-index: 101;
+    left:0;
+    top:0;
+}
+ 
+#overlay2 {
+    height: 200px;
+    display: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 100;
+    border-radius: 8px;
+    left: calc(57% - 100px);
+    top: 40%;
+}
+
+ 
